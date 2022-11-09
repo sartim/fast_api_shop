@@ -1,10 +1,11 @@
 import datetime
 
+from pydantic import BaseModel
 from pydantic import Field
 
 
-class BaseSchema:
-    id: int = Field(example="26")
+class BaseSchema(BaseModel):
+    id: int = Field()
     created_at: datetime = Field()
     updated_at: datetime = Field()
 
