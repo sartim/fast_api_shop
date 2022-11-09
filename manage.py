@@ -12,8 +12,8 @@ def main():
     """This is a management script for the application."""
 
 
-@main.command("runserver", short_help="Run development server.")
-def runserver():
+@main.command("run_server", short_help="Run development server.")
+def run_server():
     os.system("uvicorn main:app --reload")
 
 
