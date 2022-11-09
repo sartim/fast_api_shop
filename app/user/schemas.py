@@ -1,5 +1,3 @@
-import datetime
-
 from pydantic import Field
 
 from app.core.schemas import BaseSchema
