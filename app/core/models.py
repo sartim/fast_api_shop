@@ -1,4 +1,4 @@
-from app.core.db import Base
+from app.core.session import Base
 
 
 class BaseModel(Base):
