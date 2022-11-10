@@ -1,5 +1,7 @@
 import os
 
+from pydantic import BaseSettings
 
-class Config:
-    REDIS_URL = os.environ.get("REDIS_URL")
+
+class Settings(BaseSettings):
+    database_url = os.environ.get("DATABASE_URL")
