@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.core.session import create_session
+from app.user import models
 
 app = FastAPI(
     title="Shop API",
