@@ -17,7 +17,7 @@ class AbstractBaseModel(Base):
     )
 
 
-class BaseModel(Base):
+class BaseModel(AbstractBaseModel):
     __abstract__ = True
 
     id = sa.Column(sa.Integer, primary_key=True)
