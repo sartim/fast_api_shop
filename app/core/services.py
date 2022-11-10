@@ -1,6 +1,7 @@
+import sqlalchemy
+
 from app.core.session import Base
 from typing import Any, Generic, List, Optional, Type, TypeVar
-import sqlalchemy
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from starlette.exceptions import HTTPException
