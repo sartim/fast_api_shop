@@ -18,6 +18,11 @@ def create_migration(**kwargs):
         'alembic revision --autogenerate -m "{}"'.format(kwargs.get("message")))
 
 
+@main.command("migrate", short_help="Updates database revision.")
+def create_migration():
+    os.system("alembic upgrade head")
+
+
 @main.command("run_server", short_help="Run development server.")
 def run_server():
     os.system("uvicorn main:app --reload")
